@@ -1,0 +1,63 @@
+.largecontainer {
+  width: 97vw;
+  background: linear-gradient(rgba(14, 14, 14, 0.502), rgba(14, 14, 14, 0.758));
+  border-radius: 10px;
+  position: sticky;
+  bottom: 2vw;
+  z-index: 100;
+}
+
+:global(.rhap_container) {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 12px;
+  color: var(--color-text) !important;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+}
+:global(.rhap_main) {
+  display: flex;
+  flex-direction: row-reverse !important;
+  align-items: center;
+  justify-content: center;
+}
+:global(.rhap_controls-section) {
+  margin-right: 0px !important;
+  display: block;
+  width: min-content;
+}
+:global(.rhap_progress-section) {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+:global(.rhap_progress-bar) {
+  background: #98969663;
+}
+:global(.rhap_progress-indicator) {
+  background: var(--color-text);
+  width: 15px;
+  height: 15px;
+  margin-left: -7px;
+  top: -5px;
+}
+:global(.rhap_progress-filled) {
+  background: var(--color-text);
+}
+
+:global(.rhap_button-clear) {
+  color: black;
+}
+:global(.rhap_current-time) {
+  color: var(--color-text) !important;
+  width: 40px;
+  margin-right: 3px;
+}
+:global(.rhap_total-time) {
+  color: var(--color-text) !important;
+}

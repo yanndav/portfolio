@@ -1,0 +1,8 @@
+.story {
+  margin: 0px 0px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 40px);
+  transition: background 600ms ease;
+}

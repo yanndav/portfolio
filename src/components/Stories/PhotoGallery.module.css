@@ -1,0 +1,46 @@
+.mainSwiper {
+  height: 70vh;
+  width: 100%;
+}
+/* 
+.slide {
+  width: 100% !important;
+  height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+} */
+
+.slide {
+  width: auto !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-height: 100%;
+  max-width: 100%;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  display: block;
+  opacity: 0.35;
+  transform: scale(0.98);
+
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+
+:global(.swiper-slide-active) .image {
+  opacity: 1;
+  transform: scale(1);
+}

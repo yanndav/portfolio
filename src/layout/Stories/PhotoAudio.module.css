@@ -1,0 +1,22 @@
+.photo-audio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  min-height: calc(100% - 2vw);
+  /* position: fixed; */
+  top: 0px;
+  /* overflow: hidden; */
+  /* padding-top: 50px; */
+  padding-bottom: 2vw;
+  height: auto; /* OK */
+}
+
+.photo-audio h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+}

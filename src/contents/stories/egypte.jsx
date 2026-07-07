@@ -3,11 +3,7 @@ export const egypte = {
   slug: "chronique-d-egypte",
   title: "Chronique d'Egypte",
   description: "",
-  home: {
-    format: "photo-audio",
-    photos: ["DSC07444.jpg", "DSC08696"],
-    audio: "audio-long.mp3",
-  },
+
   content: {
     format: "photo-audio",
     photos: [

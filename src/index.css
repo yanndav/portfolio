@@ -3,6 +3,7 @@ html {
   margin: 0px;
   padding: 0px;
   background: #080808;
+  scroll-behavior: smooth;
 }
 * {
   --color-text: #fffadf;

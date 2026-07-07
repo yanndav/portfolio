@@ -1,13 +1,38 @@
-.largecontainer {
-  width: 97vw;
+.smallcontainer {
+  display: flex;
+  align-items: center;
+  /* width: calc(min-content + 10px); */
+  /* width: min-content; */
+  /* width: 160px; */
+  flex-direction: row;
+  flex-wrap: nowrap;
   background: linear-gradient(rgba(14, 14, 14, 0.502), rgba(14, 14, 14, 0.758));
-  border-radius: 10px;
-  position: sticky;
-  bottom: 2vw;
-  z-index: 100;
+  border-radius: 30px;
+  padding: 10px 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 10px; */
+}
+.smallcontainer :global(.rhap_container) {
+  width: min-content;
+}
+.text {
+  font-size: 1em;
+  /* flex-shrink: 0;
+
+  font-size: clamp(0.1rem, 1rem, 2rem); */
+  min-width: 0; /* critical inside grid/flex */
+
+  flex-shrink: 1;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 :global(.rhap_container) {
+  flex-grow: 0;
+  flex-shrink: 10;
   background: transparent;
   box-shadow: none;
   border-radius: 12px;
@@ -16,19 +41,17 @@
   flex-direction: row !important;
   align-items: center;
   justify-content: center;
+  padding: 0px;
 }
-
-.largecontainer :global(.rhap_main) {
-  display: flex;
-  padding: 10px 10px;
-  flex-shrink: 0;
-  flex-grow: 1;
-  flex-direction: row-reverse !important;
+:global(.rhap_main) {
+  display: inline;
+  /* flex-direction: row-reverse !important;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 :global(.rhap_controls-section) {
   margin-right: 0px !important;
+  margin-left: 0px !important;
   display: block;
   width: min-content;
 }

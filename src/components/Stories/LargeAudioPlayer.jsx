@@ -4,7 +4,6 @@ import styles from "./LargeAudioPlayer.module.css";
 const LargeAudioPlayer = ({ audio, slug }) => {
   const audiourl = audio ? `/audio/${slug}/${audio}` : null;
 
-  console.log("audiourl", audiourl);
   return (
     <div className={styles.largecontainer}>
       <AudioPlayer
@@ -12,7 +11,7 @@ const LargeAudioPlayer = ({ audio, slug }) => {
         layout="horizontal-reverse"
         customControlsSection={[RHAP_UI.MAIN_CONTROLS]}
         showJumpControls={false}
-
+        style={{ padding: "10px 10px", flexShrink: 0, flexGrow: 1 }}
         // other props here
       />
     </div>

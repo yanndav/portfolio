@@ -1,12 +1,19 @@
 import { hero } from "../../contents/home/hero";
 import styles from "./Hero.module.css";
+import { HashLink } from "react-router-hash-link";
+
 const Hero = ({ slug }) => {
   const { gallery } = hero;
   return (
     <div className={styles.hero}>
       <div className={styles.gallery}>
         {gallery.map((item, index) => (
-          <a key={index} className={styles.galleryItem} href={`#${item.slug}`}>
+          <HashLink
+            key={index}
+            className={styles.galleryItem}
+            smooth
+            to={`#${item.slug}`}
+          >
             {item.content.type === "image" && (
               <img
                 src={`/photos/${item.slug}/${item.content.src}`}
@@ -15,7 +22,7 @@ const Hero = ({ slug }) => {
                 loading="lazy"
               />
             )}
-          </a>
+          </HashLink>
         ))}
       </div>
 
@@ -30,9 +37,9 @@ const Hero = ({ slug }) => {
       </div>
 
       <div className={styles.action}>
-        <a href={`/#${slug}`} className={styles.actioncontainer}>
+        <HashLink smooth to={`/#${slug}`} className={styles.actioncontainer}>
           explorer les projets
-        </a>
+        </HashLink>
       </div>
     </div>
   );

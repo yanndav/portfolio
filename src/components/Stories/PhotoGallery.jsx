@@ -8,7 +8,7 @@ import { asset } from "../../utils/assets";
 
 const PhotoGallery = ({ photos, slug, onColorChange }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const image = `/photos/${slug}/${photos[activeIndex]}`;
+  const image = asset(`/photos/${slug}/${photos[activeIndex]}`);
 
   const { dominantColor, darkerColor } = useExtractColors(image);
 

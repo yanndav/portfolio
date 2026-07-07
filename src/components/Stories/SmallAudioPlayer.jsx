@@ -1,13 +1,14 @@
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import styles from "./SmallAudioPlayer.module.css";
+import { asset } from "../../utils/assets";
 const SmallAudioPlayer = ({ audio, slug }) => {
   const audiourl = audio ? `/audio/${slug}/${audio}` : null;
 
   return (
     <div className={styles.smallcontainer}>
       <AudioPlayer
-        src={audiourl}
+        src={asset(audiourl)}
         layout="horizontal-reverse"
         customControlsSection={[RHAP_UI.MAIN_CONTROLS]}
         customProgressBarSection={[]}

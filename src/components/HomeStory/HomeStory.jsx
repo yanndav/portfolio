@@ -1,6 +1,7 @@
 import styles from "./HomeStory.module.css";
 import SmallAudioPlayer from "../Stories/SmallAudioPlayer";
 import { useNavigate } from "react-router";
+import { asset } from "../../utils/assets";
 const HomeStory = ({ story }) => {
   const { title, description, gradient, format, slug, content, type } = story;
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ const HomeStory = ({ story }) => {
             }}
           >
             {cont.type === "photo" ? (
-              <img src={`/photos/${slug}/${cont.src}`} key={index} />
+              <img src={asset(`/photos/${slug}/${cont.src}`)} key={index} />
             ) : (
               <SmallAudioPlayer audio={cont.src} slug={slug} />
             )}

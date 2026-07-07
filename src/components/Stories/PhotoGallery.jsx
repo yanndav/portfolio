@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import "swiper/css";
 import styles from "./PhotoGallery.module.css";
 import { useExtractColors } from "react-extract-colors";
+import { asset } from "../../utils/assets";
 
 const PhotoGallery = ({ photos, slug, onColorChange }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,7 +32,7 @@ const PhotoGallery = ({ photos, slug, onColorChange }) => {
       {photos.map((photo, index) => (
         <SwiperSlide key={index} className={styles.slide}>
           <img
-            src={`/photos/${slug}/${photo}`}
+            src={asset(`/photos/${slug}/${photo}`)}
             className={styles.image}
             alt=""
             loading="lazy"

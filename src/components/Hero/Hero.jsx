@@ -1,6 +1,7 @@
 import { hero } from "../../contents/home/hero";
 import styles from "./Hero.module.css";
 import { HashLink } from "react-router-hash-link";
+import { asset } from "../../utils/assets";
 
 const Hero = ({ slug }) => {
   const { gallery } = hero;
@@ -16,7 +17,7 @@ const Hero = ({ slug }) => {
           >
             {item.content.type === "image" && (
               <img
-                src={`/photos/${item.slug}/${item.content.src}`}
+                src={asset(`/photos/${item.slug}/${item.content.src}`)}
                 alt={item.content.alt}
                 className={styles.image}
                 loading="lazy"

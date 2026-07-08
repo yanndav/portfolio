@@ -1,4 +1,4 @@
-const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+const asset = (path) => `${path}`;
 
 const hexToRgba = (hex, alpha = 0.3) => {
   const r = parseInt(hex.slice(1, 3), 16);

@@ -4,5 +4,5 @@ import mdx from "@mdx-js/rollup";
 
 export default defineConfig({
   plugins: [{ enforce: "pre", ...mdx() }, react()],
-  base: "/portfolio/",
+  // base: "/portfolio/",
 });

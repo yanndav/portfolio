@@ -30,6 +30,9 @@ const Navbar = () => {
       });
     }
   };
+  useEffect(() => {
+    setVisible(true);
+  }, [location]);
 
   useEffect(() => {
     const handleWheel = (e) => {
@@ -76,15 +79,11 @@ const Navbar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    setVisible(true);
-  }, [location]);
   return (
     <div
       className={`${styles.navbar} ${visible ? styles.visible : styles.hidden}`}
     >
       <div
-        to="/"
         className={`${styles.link} ${styles.name}`}
         onClick={(e) => handleHome(e)}
       >

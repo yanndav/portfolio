@@ -1,5 +1,5 @@
 import { useExtractColors } from "react-extract-colors";
-import { asset, hexToRgba } from "../../utils/assets";
+import { asset } from "../../utils/assets";
 import styles from "./HomeFuture.module.css";
 const Projet = ({ projet }) => {
   const { title, description, type, slug, photo } = projet;

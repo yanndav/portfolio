@@ -4,15 +4,17 @@
   flex-grow: auto;
   flex-shrink: auto;
   flex-basis: auto;
-  min-height: 99vh;
+  height: calc(99vh - 30px);
   align-items: center;
   justify-content: center;
   width: 94vw;
   gap: 3vh;
   margin-bottom: 10px;
+  padding-bottom: 30px;
+  scroll-snap-align: start;
 }
 .gallery {
-  padding-top: 50px;
+  padding-top: 80px;
   gap: 1.5vw;
   flex-grow: 2;
   display: flex;

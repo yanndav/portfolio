@@ -5,17 +5,37 @@
   flex-direction: row;
   align-items: flex-end;
   top: 0;
-  width: 94vw;
+  width: calc(94vw);
   background: transparent;
   gap: 0;
-  padding: 0 3vw;
+  padding: 5px 3vw;
   height: calc(30px + 1vw);
+  z-index: 1000000000;
+  transition: transform 0.3s ease;
+  background: #080808;
+  backdrop-filter: blur(0);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+  align-items: center;
+}
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+.visible {
+  transform: translateY(0);
+}
+
+.hidden {
+  transform: translateY(-100%);
 }
 .link {
   text-decoration: none;
   background: transparent;
   padding: 0px;
   margin: 0px;
+  cursor: pointer;
 }
 
 .name {

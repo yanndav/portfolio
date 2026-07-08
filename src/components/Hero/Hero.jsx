@@ -31,7 +31,7 @@ const Hero = ({ slug }) => {
         <div>
           des <span className={styles.emphasize}>assemblages</span>
         </div>
-        <div>de sons, d'images et de textes,</div>
+        <div>d'images, de textes et de sons</div>
         <div className={styles.smaller}>
           pour raconter des histoires humaines
         </div>

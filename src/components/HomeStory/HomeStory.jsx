@@ -27,6 +27,7 @@ const HomeStory = ({ story }) => {
         {content.map((cont, index) => (
           <div
             className={styles.mediaItem}
+            key={index}
             style={{
               gridColumn: `${cont.col} / span ${cont.colSpan}`,
               gridRow: `${cont.row} / span ${cont.rowSpan}`,

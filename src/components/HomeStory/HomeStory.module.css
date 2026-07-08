@@ -9,6 +9,7 @@
   padding: 30px 20px;
   width: calc(100vw - 40px);
   gap: 3vw;
+  scroll-snap-align: start;
 }
 
 .content {

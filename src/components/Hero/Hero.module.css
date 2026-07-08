@@ -10,6 +10,7 @@
   width: 94vw;
   gap: 3vh;
   margin-bottom: 10px;
+  scroll-snap-align: start;
 }
 .gallery {
   padding-top: 50px;

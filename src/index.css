@@ -4,6 +4,7 @@ html {
   padding: 0px;
   background: #080808;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 * {
   --color-text: #fffadf;

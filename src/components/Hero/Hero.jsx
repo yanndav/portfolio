@@ -6,7 +6,7 @@ import { asset } from "../../utils/assets";
 const Hero = ({ slug }) => {
   const { gallery } = hero;
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="hero">
       <div className={styles.gallery}>
         {gallery.map((item, index) => (
           <HashLink

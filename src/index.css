@@ -16,7 +16,10 @@ body {
   min-width: 100%;
   margin: 0px;
 }
-
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
 a:visited {
   text-decoration: none;
   color: var(--color-text);

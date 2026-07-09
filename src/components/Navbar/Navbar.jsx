@@ -87,7 +87,7 @@ const Navbar = () => {
         className={`${styles.link} ${styles.name}`}
         onClick={(e) => handleHome(e)}
       >
-        assemblages
+        rassemblages
       </div>
       <Link to="/a-propos" className={styles.link}>
         à propos

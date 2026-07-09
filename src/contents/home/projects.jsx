@@ -4,7 +4,7 @@ export const projects = [
     title: "Chronique d'Egypte",
     type: "son - photo",
     description:
-      "Dans cette chronique sonore, je partage mes impressions et je cherche à m'échapper des préjugés qui me guettent.",
+      "Une promenade sonore à Alexandrie et Le Caire. Un assemblage de sons, d’impressions et de lectures à la découverte d’un pays. Et une recherche de fragile équilibre dans la compréhension que l’on en nourrit.",
     gradient: {
       lighter: "#C4AF90",
       darker: "#423629",

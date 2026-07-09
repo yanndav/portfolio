@@ -1,7 +1,7 @@
 export const hero = {
-  title: "assemblages",
+  title: "rassemblages",
   subtitle:
-    "des assemblages de sons, d'images et de textes pour raconter des histoires humaines",
+    "des rassemblages de sons, d'images et de textes pour raconter des histoires humaines",
   gallery: [
     {
       content: {

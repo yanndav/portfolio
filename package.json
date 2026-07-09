@@ -1,9 +1,9 @@
 {
-  "name": "assemblages",
+  "name": "rassemblages",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "assemblages.studio",
+  "homepage": "rassemblages.fr",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d dist",

@@ -29,12 +29,12 @@ const Hero = ({ slug }) => {
 
       <div className={styles.subtitle}>
         <div>
-          des <span className={styles.emphasize}>assemblages</span>
+          des <span className={styles.emphasize}>récits assemblés</span>
         </div>
-        <div>d'images, de textes et de sons</div>
-        <div className={styles.smaller}>
+        <div>par l'image, le son et l'écriture</div>
+        {/* <div className={styles.smaller}>
           pour raconter des histoires humaines
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.action}>

@@ -5,9 +5,10 @@ const HomeFuture = () => {
   return (
     <div className={styles.encours}>
       <div className={styles.presentation}>
-        <h2 className={styles.sectionTitre}>projets en cours</h2>
+        <h2 className={styles.sectionTitre}>à venir</h2>
         <div className={styles.sousTitre}>
-          Ils seront bientôt prêts, mais pour l'instant ils murissent.
+          Des récits bientôt prêts. Pour l'instant, ils mûrissent
+          tranquillement.
         </div>
       </div>
 

@@ -28,6 +28,9 @@
   align-items: center;
   justify-content: center;
 }
+.largecontainer path {
+  fill: var(--color-text) !important;
+}
 :global(.rhap_controls-section) {
   margin-right: 0px !important;
   display: block;

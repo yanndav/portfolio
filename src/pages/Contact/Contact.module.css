@@ -24,6 +24,7 @@
 .contact {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .contact > div {

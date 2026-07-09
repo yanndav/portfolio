@@ -1,5 +1,9 @@
 import styles from "./Contact.module.css";
 import { asset } from "../../utils/assets";
+import { BsLinkedin } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsMailbox } from "react-icons/bs";
+
 const Contact = () => {
   return (
     <div className={styles.contactContainer}>
@@ -16,13 +20,13 @@ const Contact = () => {
         </div>
         <div className={styles.contact}>
           <div>
-            <div>email</div>
+            <BsMailbox />
             <a className={styles.link} href="mailto:yann.collindavid@gmail.com">
               yann.collindavid@gmail.com
             </a>
           </div>
           <div>
-            <div>instagram</div>
+            <BsInstagram />
             <a
               className={styles.link}
               href="https://www.instagram.com/yann_dav/"
@@ -31,7 +35,7 @@ const Contact = () => {
             </a>
           </div>
           <div>
-            <div>linkedin</div>
+            <BsLinkedin />
             <a
               className={styles.link}
               href="https://www.linkedin.com/in/ydavid/"

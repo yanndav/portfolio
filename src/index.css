@@ -7,16 +7,19 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-* {
+body {
   --color-text: #fffadf;
   --color-dark: #080808;
   color: var(--color-text);
   font-family: "Montserrat", sans-serif;
-}
-body {
   min-height: 100vh;
   min-width: 100%;
   margin: 0px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 header {
@@ -42,13 +45,23 @@ main {
   align-content: center;
   align-items: left;
   /* margin: 0px auto; */
+  gap: 10px;
 }
-
-.mentions {
+.mentions p {
+  color: var(--color-text);
+  text-align: justify;
+  margin: 0;
+}
+/* 
+.mentions p,
+span {
   display: flex;
   flex-direction: column;
-  /* width: 500px;
-  max-width: 90vw; */
+
   align-content: left;
   align-items: left;
-}
+  .content p {
+    width: 100%;
+    margin: 0px;
+  }
+} */

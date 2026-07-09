@@ -1,0 +1,72 @@
+.contactContainer {
+  height: calc(100vh - 180px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 2rem;
+  padding: 90px 3vw;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: space-between;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.rassemblages {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:visited {
+  color: var(--text-color) !important;
+}
+.link:-webkit-any-link {
+  color: var(--text-color) !important;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.pictures img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .information {
+    flex-grow: 10;
+  }
+  .pictures {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 50px;
+  }
+}

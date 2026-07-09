@@ -19,7 +19,7 @@ const Navbar = () => {
     } else {
       window.scrollTo({
         top: 0,
-        behavior: "instant",
+        behavior: "auto",
       });
       navigate("/");
       requestAnimationFrame(() => {
@@ -29,6 +29,14 @@ const Navbar = () => {
         });
       });
     }
+  };
+
+  const handleContact = () => {
+    navigate("/contact");
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
   };
   useEffect(() => {
     setVisible(true);
@@ -89,9 +97,9 @@ const Navbar = () => {
       >
         rassemblages
       </div>
-      <Link to="/a-propos" className={styles.link}>
-        à propos
-      </Link>
+      <div onClick={() => handleContact()} className={styles.link}>
+        contact
+      </div>
     </div>
   );
 };

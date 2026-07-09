@@ -35,11 +35,10 @@
   gap: 3vh;
 }
 
-.content > h1,
-p {
-  color: var(--color-dark) !important;
+.content p {
   width: 100%;
   margin: 0px;
+  color: var(--color-dark);
 }
 
 @media (max-width: 768px) {

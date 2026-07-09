@@ -66,6 +66,8 @@
 .action {
   width: 100%;
   text-align: left;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .action:hover {

@@ -9,6 +9,7 @@ html {
 
 * {
   --color-text: #fffadf;
+  --color-dark: #080808;
   color: var(--color-text);
   font-family: "Montserrat", sans-serif;
 }
@@ -30,4 +31,24 @@ main {
   min-width: 100%;
   padding: 0px;
   margin: 0px;
+}
+
+.mentions {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 6vw);
+  /* max-width: 90vw; */
+  padding: 3vh 2vw;
+  align-content: center;
+  align-items: left;
+  /* margin: 0px auto; */
+}
+
+.mentions {
+  display: flex;
+  flex-direction: column;
+  /* width: 500px;
+  max-width: 90vw; */
+  align-content: left;
+  align-items: left;
 }

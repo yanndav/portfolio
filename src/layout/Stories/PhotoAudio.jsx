@@ -7,8 +7,10 @@ const PhotoAudio = ({ photos, audio, text, slug, title, onColorChange }) => {
   return (
     <div className={styles["photo-audio"]}>
       <PhotoGallery photos={photos} slug={slug} onColorChange={onColorChange} />
-      <Title title={title} />
-      <Text text={text} />
+      <div className={styles.content}>
+        <Title title={title} />
+        <Text text={text} />
+      </div>
       <LargeAudioPlayer audio={audio} slug={slug} />
     </div>
   );

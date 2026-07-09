@@ -10,7 +10,7 @@ const Footer = () => {
       style={{ scrollSnapAlign: location.pathname === "/" ? "start" : "none" }}
     >
       <Link to="/contact">contact</Link>
-      <Link to="/a-propos">à propos</Link>
+      <Link to="/mentions-legales">mentions légales</Link>
     </div>
   );
 };

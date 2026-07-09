@@ -1,9 +1,8 @@
 import styles from "./HomeStory.module.css";
-import SmallAudioPlayer from "../Stories/SmallAudioPlayer";
 import { useNavigate } from "react-router";
 import { asset } from "../../utils/assets";
 const HomeStory = ({ story }) => {
-  const { title, description, gradient, format, slug, content, type } = story;
+  const { title, description, gradient, format, slug, photos, type } = story;
   const navigate = useNavigate();
   const handleClick = (e) => {
     e.preventDefault();
@@ -24,27 +23,27 @@ const HomeStory = ({ story }) => {
       id={slug}
     >
       <div className={`${styles.content} ${styles[format]}`}>
-        {content.map((cont, index) => (
+        {photos.map((photo, index) => (
           <div
             className={styles.mediaItem}
             key={index}
-            style={{
-              gridColumn: `${cont.col} / span ${cont.colSpan}`,
-              gridRow: `${cont.row} / span ${cont.rowSpan}`,
-            }}
+            // style={{
+            //   gridColumn: `${cont.col} / span ${cont.colSpan}`,
+            //   gridRow: `${cont.row} / span ${cont.rowSpan}`,
+            // }}
           >
-            {cont.type === "photo" ? (
-              <img src={asset(`/photos/${slug}/${cont.src}`)} key={index} />
-            ) : (
-              <SmallAudioPlayer audio={cont.src} slug={slug} />
-            )}
+            <img
+              src={asset(`/photos/${slug}/${photo.src}`)}
+              alt={photo.alt}
+              key={index}
+            />
           </div>
         ))}
       </div>
       <div className={styles.description}>
-        <div>{type}</div>
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div className={styles.type}>{type}</div>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.descriptionText}>{description}</p>
         <div className={styles.action} onClick={(e) => handleClick(e)}>
           <span className={styles.actioncontainer}>découvrir</span>
         </div>

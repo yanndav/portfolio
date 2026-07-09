@@ -44,3 +44,10 @@
   opacity: 1;
   transform: scale(1);
 }
+
+@media (max-width: 768px) {
+  .mainSwiper {
+    height: 40vh;
+    margin-top: 30px;
+  }
+}

@@ -1,10 +1,10 @@
 .homeStory {
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-left: -3vw;
   padding: 30px 20px;
   width: calc(100vw - 40px);
@@ -15,7 +15,7 @@
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1;
   width: min(50vw, 50vh);
   height: min(50vw, 50vh);
   aspect-ratio: 1 / 1;
@@ -30,6 +30,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 8px;
+  flex-grow: 10;
 }
 
 .content img {
@@ -41,13 +43,26 @@
 .description {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   max-width: 40%;
   flex-shrink: 1;
-  justify-content: space-evenly;
-  min-height: 400px;
-  max-height: 70%;
+  flex-grow: 0;
+  justify-content: center;
+  height: min-content;
+  /* min-height: 400px; */
+  /* max-height: 70%; */
+  font-size: calc(12px + 1.5vw);
+}
+.type {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.title {
 }
 
+.descriptionText {
+  font-size: calc(12px + 1vw);
+}
 .action {
   width: 100%;
   text-align: left;
@@ -68,13 +83,14 @@
 @media (max-width: 768px) {
   .homeStory {
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 4vh;
   }
 
   .content {
-    order: 2;
+    order: 1;
     width: min(90vw, 90vh);
     height: min(50vw, 50vh);
   }
@@ -86,7 +102,11 @@
 
   .description {
     order: 1;
-    max-width: 90%;
+    max-width: 100%;
+    /* flex-grow: 10; */
+    /* flex-shrink: 0; */
+    /* max-width: 90%; */
+    width: 100%;
     min-height: unset;
     max-height: unset;
   }

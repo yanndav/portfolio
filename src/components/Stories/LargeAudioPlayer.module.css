@@ -1,10 +1,11 @@
 .largecontainer {
   width: 97vw;
-  background: linear-gradient(rgba(14, 14, 14, 0.502), rgba(14, 14, 14, 0.758));
-  border-radius: 10px;
+  background: linear-gradient(rgba(14, 14, 14, 0.905), rgb(14, 14, 14));
+  border-radius: 16px;
   position: sticky;
   bottom: 2vw;
   z-index: 100;
+  padding: 0px;
 }
 
 :global(.rhap_container) {
@@ -20,7 +21,7 @@
 
 .largecontainer :global(.rhap_main) {
   display: flex;
-  padding: 10px 10px;
+  padding: 0px 10px;
   flex-shrink: 0;
   flex-grow: 1;
   flex-direction: row-reverse !important;

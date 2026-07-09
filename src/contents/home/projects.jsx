@@ -4,12 +4,23 @@ export const projects = [
     title: "Chronique d'Egypte",
     type: "son - photo",
     description:
-      "Une promenade sonore à Alexandrie et Le Caire. Un assemblage de sons, d’impressions et de lectures à la découverte d’un pays. Et une recherche de fragile équilibre dans la compréhension que l’on en nourrit.",
+      "Une promenade sonore à Alexandrie et au Caire. Un assemblage de sons, d’impressions et de lectures à la découverte d’un pays. Et une recherche de fragile équilibre dans la compréhension que l’on en nourrit.",
     gradient: {
       lighter: "#C4AF90",
       darker: "#423629",
     },
     format: "photo-audio",
+    photos: [
+      {
+        src: "DSC08696.jpg",
+        alt: "Un homme vend des sandwichs à Giza.",
+      },
+
+      {
+        src: "DSC07444.jpg",
+        alt: "Deux femmes pratiquent la pêche à Alexandrie.",
+      },
+    ],
     content: [
       {
         src: "DSC08696.jpg",

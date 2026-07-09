@@ -18,7 +18,8 @@
   padding: 90px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
   position: sticky;
   height: calc(100vh - 180px);
 }
@@ -107,9 +108,9 @@
   }
 
   .projet {
-    flex: 0 0 calc(90% - 80px);
-    width: calc(90% - 80px);
-    scroll-snap-align: start;
+    flex: 0 0 calc(95% - 80px);
+    width: calc(95% - 80px);
+    /* scroll-snap-align: start; */
     padding: 20px;
     gap: 10px;
     /* min-width: 90%; */
